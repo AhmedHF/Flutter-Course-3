@@ -1,3 +1,4 @@
+import 'package:course4/views/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_overboard/flutter_overboard.dart';
 
@@ -36,15 +37,18 @@ class OnBoardingScreen extends StatelessWidget {
         pages: pages,
         showBullets: true,
         skipCallback: () {
-          // Navigator.push(context, MaterialPageRoute(builder: ))
-          // // _globalKey.currentState.showSnackBar(SnackBar(
-          // //   content: Text("Skip clicked"),
-          // ));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => HomeScreen(),
+              ));
         },
         finishCallback: () {
-          // _globalKey.currentState.showSnackBar(SnackBar(
-          //   content: Text("Finish clicked"),
-          // ));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => HomeScreen(),
+              ));
         },
       ),
     );
