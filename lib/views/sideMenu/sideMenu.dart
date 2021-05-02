@@ -1,3 +1,4 @@
+import 'package:course4/views/task3/task3.dart';
 import 'package:course4/views/task_2/task.dart';
 import 'package:flutter/material.dart';
 
@@ -48,6 +49,20 @@ class _SideMenuState extends State<SideMenu> {
                   context,
                   MaterialPageRoute(
                     builder: (_) => Task2(),
+                  ));
+              // Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            title: Text('Task 3'),
+            onTap: () {
+              // Update the state of the app
+              // ...
+              // Then close the drawer
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => Task3(),
                   ));
               // Navigator.pop(context);
             },
