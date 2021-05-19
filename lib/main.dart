@@ -1,3 +1,4 @@
+import 'package:course4/views/splash/slpash.dart';
 import 'package:course4/views/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: OnBoardingScreen(), // MyHomePage(title: 'Flutter Demo Home Page'),
+      home:
+          SplashScreen(), //OnBoardingScreen(), // MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
